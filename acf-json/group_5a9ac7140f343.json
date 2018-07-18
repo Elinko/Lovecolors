@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "return_format": "url",
             "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
@@ -85,5 +85,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1522101884
+    "modified": 1531947566
 }

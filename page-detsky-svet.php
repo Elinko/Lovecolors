@@ -15,21 +15,25 @@ $nadpis_text2= get_field('doplnky_nadpis');
 $obsah_text2= get_field('doplnky_obsah');
 $obsah_text3= get_field('color_me_nadpis');
 $nadpis_text3= get_field('color_me_obsah');
-$tematicke = get_field('tematicke_detske_izby_galeria');
-$doplnky = get_field('doplnky');
-$colorme = get_field('color_me_galeria');
+
+$tematicke = get_field('galeria',928);
+$doplnky = get_field('galeria',929);
+$colorme = get_field('galeria',930);
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
  ?>
  <main>
  	<section class="hp first detskysvet group">
- 		<div class="padding">
- 			<div class="menu-box menu-box1 ">
+ 		<div class="padding babysub">
+ 			<div class="menu-box menu-box1 "  style="background:url('<?= the_field('pozadie_baby',5) ?>'); background-size:cover;">
  					<a href="<?php echo esc_url(home_url('/')); ?>baby">
  						<div class="">
 
- 							<div class="shadow1"></div>
+ 							<div class="shadow1">
+                <div class="color"></div>
+              </div>
  							<div class="toscale">
+                <div class="coloring"></div>
  									<h2>baby</h2>
  									<i class="h2border">______</i>
  									<p>do postielky</p>
@@ -41,7 +45,7 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  		</div>
 
  		<div class="padding">
- 			<div class="menu-box menu-box2">
+ 			<div class="menu-box menu-box2"  style="background:url('<?= the_field('pozadie_detsky_svet',5) ?>'); background-size:cover;">
  					<a href="<?php echo esc_url(home_url('/')); ?>detsky-svet">
  						<div class=" ">
  						<div class="shadow1 activ"></div>
@@ -55,12 +59,15 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  			</div>
  		</div>
 
- 		<div class="padding">
- 			<div class="menu-box menu-box3">
+ 		<div class="padding homedecorsub">
+ 			<div class="menu-box menu-box3"  style="background:url('<?= the_field('pozadie_home_decor',5) ?>'); background-size:cover;">
  					<a href="<?php echo esc_url(home_url('/')); ?>home-decor">
  						<div class="">
- 						<div class="shadow1"></div>
+ 						<div class="shadow1">
+              <div class="color"></div>
+            </div>
  							<div class="toscale">
+                <div class="coloring"></div>
  								<h2>home decor</h2>
  								<i class="h2border">______</i>
  								<p>pre krajší domov</p>
@@ -82,9 +89,10 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
  			<div class="hp group smaller">
  				<div class="padding">
- 					<div class="menu-box forfade menu-box1">
+ 					<div class="menu-box forfade menu-box1" style="background:url('<?= the_field('pozadie_sekcie',928) ?>'); background-size:cover;">
  							<a href="" class="fade2">
  								<div class="toscale ">
+                  <div class="coloring"></div>
  										<h2 class="tematicke">Tematické <br> detské&nbsp;izby</h2>
  										<i class="h2border">______</i>
  										<p>realizácie</p>
@@ -94,9 +102,10 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  				</div>
 
  				<div class="padding">
- 					<div class="menu-box forfade menu-box2">
+ 					<div class="menu-box forfade menu-box2" style="background:url('<?= the_field('pozadie_sekcie',929) ?>'); background-size:cover;">
  							<a href="" class="fade3">
  								<div class="toscale ">
+                  <div class="coloring"></div>
  										<h2 style="margin-top:10px;">DOPLNKY</h2>
  										<i class="h2border">______</i>
  										<p>baldachýny a&nbsp;pufy</p>
@@ -106,9 +115,10 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  				</div>
 
         <div class="padding">
-          <div class="menu-box forfade menu-box1">
+          <div class="menu-box forfade menu-box1" style="background:url('<?= the_field('pozadie_sekcie',930) ?>'); background-size:cover;">
               <a href="" class="fade1">
                 <div class="toscale ">
+                  <div class="coloring"></div>
                     <h2>Rainboo</h2>
                     <i class="h2border">______</i>
                     <p>autorské kolekcie</p>
@@ -196,7 +206,7 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
        <?php if( $nadpis_text3 ) {echo"<h1 class='super-font'>".$nadpis_text3."</h1>"; } ?>
        <?php if( $obsah_text3 ) {echo"<p>".$obsah_text3."</p>"; } ?>
      </article>
-    <?php if( $doplnky ): ?>
+    <?php if( $colorme ): ?>
       <div class="hp first group">
            <?php foreach( $colorme as $image ): ?>
              <div class="padding">

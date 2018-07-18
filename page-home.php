@@ -28,7 +28,7 @@ $nadpisstranky= get_field('nadpis_stranky');
 
 </head>
 <body>
-<header>
+<header style="background:url('<?= the_field('pozadie_header',5) ?>');  background-size:cover; ">
 	<a href="#">
 		<div class="logo">
 			<h1>Love Colorr</h1>
@@ -45,14 +45,14 @@ $nadpisstranky= get_field('nadpis_stranky');
 		<ul>
       <li><a href="<?php echo esc_url(home_url('/')); ?>kolekcie" class="activ">kolekcie</a> </li>
       <li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">designer</a> </li>
-			<li><a href="#">dostupné</a> </li>
+			<li><a href="https://eshop.lovecolors.sk/">dostupné</a> </li>
 		</ul>
 	</nav>
 </header>
 <main>
 	<section class="hp group forindex">
 		<div class="padding">
-			<div class="menu-box menu-box1">
+			<div class="menu-box menu-box1" style="background:url('<?= the_field('pozadie_baby',5) ?>'); background-size:cover;">
 					<div class="stitok">baby</div>
 					<a href="<?php echo esc_url(home_url('/')); ?>baby">
 						<div class=" ">
@@ -61,14 +61,18 @@ $nadpisstranky= get_field('nadpis_stranky');
 								<i class="h2border">______</i>
 								<p>do postielky</p>
 							</div>
-							<div class="shadow1"></div>
+							<div class="shadow1">
+                <div class="color">
+
+                </div>
+              </div>
 						</div>
 					</a>
 			</div>
 		</div>
 
 		<div class="padding">
-			<div class="menu-box menu-box2">
+			<div class="menu-box menu-box2" style="background:url('<?= the_field('pozadie_detsky_svet',5) ?>'); background-size:cover;">
 					<div class="stitok">detský svet</div>
 					<a href="<?php echo esc_url(home_url('/')); ?>detsky-svet">
 						<div class=" ">
@@ -77,14 +81,18 @@ $nadpisstranky= get_field('nadpis_stranky');
 								<i class="h2border">______</i>
 								<p>pre naše detičky</p>
 							</div>
-							<div class="shadow1"></div>
+							<div class="shadow1">
+                <div class="color">
+
+                </div>
+              </div>
 						</div>
 					</a>
 			</div>
 		</div>
 
 		<div class="padding">
-			<div class="menu-box menu-box3">
+			<div class="menu-box menu-box3" style="background:url('<?= the_field('pozadie_home_decor',5) ?>'); background-size:cover;">
 					<div class="stitok">home decor</div>
 					<a href="<?php echo esc_url(home_url('/')); ?>home-decor">
 						<div class="">
@@ -93,7 +101,11 @@ $nadpisstranky= get_field('nadpis_stranky');
 								<i class="h2border">______</i>
 								<p>pre krajší domov</p>
 							</div>
-							<div class="shadow1"></div>
+							<div class="shadow1">
+                <div class="color">
+
+                </div>
+              </div>
 						</div>
 					</a>
 			</div>

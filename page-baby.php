@@ -13,19 +13,21 @@ $nadpis_text1= get_field('sladke_sny_nadpis');
 $obsah_text1= get_field('sladke_sny_obsah');
 $obsah_text2= get_field('doplnky_obsah');
 $nadpis_text2= get_field('doplnky_nadpis');
-$sladke_sny= get_field('sladke_sny');
-$doplnky= get_field('doplnky');
+
+$sladke_sny= get_field('galeria',925);
+$doplnky= get_field('galeria',926);
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
  ?>
  <main>
  	<section class="hp first baby group">
  		<div class="padding">
- 			<div class="menu-box menu-box1 ">
+ 			<div class="menu-box menu-box1 " style="background:url('<?= the_field('pozadie_baby',5) ?>'); background-size:cover;">
  					<a href="<?php echo esc_url(home_url('/')); ?>baby">
  						<div class="">
 
- 							<div class="shadow1 activ"></div>
+ 							<div class="shadow1 activ">
+              </div>
  							<div class="toscale activatescal">
  									<h2>baby</h2>
  									<i class="h2border">______</i>
@@ -37,12 +39,15 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  			</div>
  		</div>
 
- 		<div class="padding">
- 			<div class="menu-box menu-box2">
+ 		<div class="padding detskesub">
+ 			<div class="menu-box menu-box2" style="background:url('<?= the_field('pozadie_detsky_svet',5) ?>'); background-size:cover;">
  					<a href="<?php echo esc_url(home_url('/')); ?>detsky-svet">
  						<div class=" ">
- 						<div class="shadow1"></div>
+              <div class="shadow1">
+                <div class="color"></div>
+              </div>
  							<div class="toscale">
+                <div class="coloring"></div>
  								<h2>detský svet</h2>
  								<i class="h2border">______</i>
  								<p>pre naše detičky</p>
@@ -52,12 +57,15 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  			</div>
  		</div>
 
- 		<div class="padding">
- 			<div class="menu-box menu-box3">
+ 		<div class="padding homedecorsub">
+ 			<div class="menu-box menu-box3" style="background:url('<?= the_field('pozadie_home_decor',5) ?>'); background-size:cover;">
  					<a href="<?php echo esc_url(home_url('/')); ?>home-decor">
  						<div class="">
- 						<div class="shadow1"></div>
+              <div class="shadow1">
+                <div class="color"></div>
+              </div>
  							<div class="toscale">
+                <div class="coloring"></div>
  								<h2>home decor</h2>
  								<i class="h2border">______</i>
  								<p>pre krajší domov</p>
@@ -79,9 +87,11 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
  			<div class="hp group smaller">
  				<div class="padding">
- 					<div class="menu-box forfade menu-box1">
+ 					<div class="menu-box forfade menu-box1" style="background:url('<?= the_field('pozadie_sekcie',925) ?>'); background-size:cover;">
  							<a href="" class="fade2">
  								<div class="toscale ">
+                  <div class="coloring">
+                  </div>
  										<h2>SLADKÉ SNY</h2>
  										<i class="h2border">______</i>
  										<p>Galéria</p>
@@ -91,9 +101,11 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  				</div>
 
  				<div class="padding">
- 					<div class="menu-box forfade menu-box2">
+ 					<div class="menu-box forfade menu-box2" style="background:url('<?= the_field('pozadie_sekcie',926) ?>'); background-size:cover;">
  							<a href="" class="fade3">
  								<div class="toscale ">
+                  <div class="coloring">
+                  </div>
  										<h2>DOPLNKY</h2>
  										<i class="h2border">______</i>
  										<p>Galéria</p>
