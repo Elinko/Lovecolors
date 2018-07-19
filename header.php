@@ -48,7 +48,7 @@
 					<h1>Love Colorr</h1>
 				</div>
 			</a>
-			<p>by Julianna Renczés Kovács</p>
+			<p>by Julianna Rencés Kovács</p>
 			<span class="language">
 				<a href="#" class="activ">SK</a>
 				<a href="#">ENG</a>

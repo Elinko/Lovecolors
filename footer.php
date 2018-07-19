@@ -74,7 +74,7 @@ a generáciám po nich.</p>
 						<h3 class="super-font">ADRESA</h3>
 						<ul>
 							<li>Love Colors</li>
-							<li>Julianna Renczés Kovács</li>
+							<li>Julianna Rencés Kovács</li>
 							<li class="noborder">prevádzka:</li>
 							<li class="noborder"> </li>
 							<li class="noborder">29.augusta 16</li>
