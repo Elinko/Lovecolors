@@ -60,7 +60,7 @@ $nadpisstranky= get_field('nadpis_stranky');
           </button>
         </div>
         <div class="modal-body">
-          <?php the_field('vyskakovaci_popup');the_field('aktivovat_popup'); ?>
+          <?php the_field('vyskakovaci_popup'); ?>
         </div>
         <div class="modal-footer">
           <?php if( get_field('vyskakovaci_odkaz')): ?>
