@@ -12,6 +12,24 @@
 		position: static;
 	}
 }
+/* HP POPUP MODAL */
+#hpmodal{
+   background:  #ffffffbf;
+}
+#hpmodal .modal-header, #hpmodal .modal-footer, #hpmodal .modal-body{
+	border: 0;
+	text-align: center;
+	margin: 0 auto;
+	color:#878787!important;
+}
+#hpmodal .modal-footer .btn{
+	background: #68e6d1;
+	color:#878787;
+	transition: .2s all;
+}
+#hpmodal .modal-footer .btn:hover{
+	transform: scale(1.1);
+}
 
 /****************************footer*****************************/
 .social{

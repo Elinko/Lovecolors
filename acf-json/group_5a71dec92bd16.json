@@ -135,6 +135,49 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5b5346643ced2",
+            "label": "Aktivovať POPUP",
+            "name": "aktivovat_popup",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Aktivovať": "Aktivovať",
+                "Deaktivovať": "Deaktivovať"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b5343993935a",
+            "label": "Vyskakovací POPUP",
+            "name": "vyskakovaci_popup",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -156,5 +199,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1531933395
+    "modified": 1532184838
 }

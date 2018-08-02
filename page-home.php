@@ -49,6 +49,29 @@ $nadpisstranky= get_field('nadpis_stranky');
 		</ul>
 	</nav>
 </header>
+<!-- Modal -->
+<?php if( get_field('aktivovat_popup')=="Aktivovať" ): ?>
+  <div class="modal fade" id="hpmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <?php the_field('vyskakovaci_popup'); ?>
+        </div>
+        <div class="modal-footer">
+          <?php if( get_field('vyskakovaci_odkaz')): ?>
+            <a href="<?php the_field('vyskakovaci_odkaz'); ?>" class="btn"><?php the_field('vyskakovaci_text_odkazu'); ?></a>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
+
 <main>
 	<section class="hp group forindex">
 		<div class="padding">
