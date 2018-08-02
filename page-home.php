@@ -45,7 +45,7 @@ $nadpisstranky= get_field('nadpis_stranky');
 		<ul>
       <li><a href="<?php echo esc_url(home_url('/')); ?>kolekcie" class="activ">kolekcie</a> </li>
       <li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">designer</a> </li>
-			<li><a href="https://eshop.lovecolors.sk/">dostupné</a> </li>
+      <li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
 		</ul>
 	</nav>
 </header>

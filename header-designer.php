@@ -42,7 +42,7 @@
 					<h1>Love Colorr</h1>
 				</div>
 			</a>
-			<p>by Julianna Renczés Kovács</p>
+			<p>by Julianna Rencés Kovács</p>
 			<span class="language">
 				<a href="#" class="activ">SK</a>
 				<a href="#">ENG</a>
@@ -70,7 +70,7 @@
 						<li><a href="<?php echo esc_url(home_url('/')); ?>blog">blog</a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?>kontakt">kontakt</a> </li>
 					</ol>
-					<li><a href="#">DOSTUPNÉ</a></li>
+					<li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
 				</ul>
 			</label>
 			</label>
@@ -89,7 +89,7 @@
 				<ul>
 					<li><a href="<?php echo esc_url(home_url('/')); ?>kolekcie">kolekcie</a> </li>
 					<li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">designer</a> </li>
-					<li><a href="#">dostupné</a> </li>
+					<li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
 					<?php //if($_SERVER['REQUEST_URI']=="/detsky-svet/") { echo'mam jooo';} ?>
 				</ul>
 
