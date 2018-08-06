@@ -123,19 +123,21 @@ $(document).ready(function () {
 				$(this).find(' .toscale').css({ 'transform': 'scale(1)' }, 1000);
 		});
 
-		$('.fadeout').hide();
-		$('.forfade a').on('click', function (event) {
-				$('.forfade .toscale').removeClass('activatescal');
+		// $('.fadeout').hide();
+		// $('.forfade a').on('click',function(event){
+		//   $('.forfade .toscale').removeClass('activatescal');
+		//
+		//   event.preventDefault();
+		//       $(this).find('.toscale').addClass('activatescal');
+		// });
+		//
+		// $('.forfade a').on('click', function (event) {
+		//   var clicked = this.className;
+		//       $('.fadeout').fadeOut();
+		//   $('.'+clicked).fadeIn(1000);
+		//   });
 
-				event.preventDefault();
-				$(this).find('.toscale').addClass('activatescal');
-		});
 
-		$('.forfade a').on('click', function (event) {
-				var clicked = this.className;
-				$('.fadeout').fadeOut();
-				$('.' + clicked).fadeIn(1000);
-		});
 		$('.designer .col-sm-4 img').height($('.artdesigner').outerHeight());
 		$('.blog .col-sm-4 img').height($('.blog .col-sm-8').outerHeight() / 2 - 3);
 		$('.krasa .col-sm-4 img').height($('.krasatext').height());
@@ -363,15 +365,18 @@ $(document).ready(function () {
 		// if (screen.width < 500) {
 		// 	$("html, body").animate({ scrollTop: 1050 }, "slow");
 		// }
-		$('.kolekciesub .forfade a').on('click', function (event) {
-				event.preventDefault();
-				if ($(window).width() < 768) {
-						$("html, body").animate({ scrollTop: $('header').outerHeight() + $('.content-text').outerHeight() + $('.smaller').outerHeight() + $('.hp').outerHeight() + 40 }, "slow");
-				} else {
-						$("html, body").animate({ scrollTop: $('header').outerHeight() + $('.content-text').outerHeight() + $('.smaller').outerHeight() + $('.hp').outerHeight() + 70 }, "slow");
-				}
-				return false;
-		});
+
+
+		// $('.kolekciesub .forfade a').on('click', function(event){
+		// 	event.preventDefault();
+		// 	if($(window).width()<768){
+		// 		$("html, body").animate({ scrollTop: $('header').outerHeight()+ $('.content-text').outerHeight() + $('.smaller').outerHeight() + $('.hp').outerHeight() +40 }, "slow");
+		// 	}
+		// 	else{
+		// 		$("html, body").animate({ scrollTop: $('header').outerHeight()+ $('.content-text').outerHeight() + $('.smaller').outerHeight() + $('.hp').outerHeight() +70 }, "slow");
+		// 	}
+		// 	return false;
+		// });
 
 		var location = window.location.pathname;
 		if (location == '/baby/' || location == '/detsky-svet/' || location == '/home-decor/' || location == '/en/home-decor-en/' || location == '/en/the-world-of-children/' || location == '/en/baby-en/') {
