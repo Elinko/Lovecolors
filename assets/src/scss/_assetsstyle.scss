@@ -1,0 +1,62 @@
+
+.masonry {
+  transition: all .5s ease-in-out;
+  column-gap: 30px;
+  column-fill: initial;
+  .brick {
+    margin-bottom: 30px;
+    overflow: hidden;
+    img {
+      transition: all .5s ease-in-out;
+    }
+    &:hover img {
+      opacity: .75;
+    }
+  }
+  &.bordered {
+    column-rule: 1px solid #eee;
+    column-gap: 50px;
+    .brick {
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #eee;
+    }
+  }
+  &.gutterless {
+    column-gap: 0;
+    .brick {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.span {
+  column-span: all;
+  *margin: 30px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .desc {
+    font-size: 1.25em;
+  }
+  .intro {
+    letter-spacing: 1px;
+  }
+  .wrapper {
+    width: 80%;
+    padding: 2em;
+  }
+  .masonry { 
+    column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    width: 85%;
+    padding: 1.5em;
+  }
+  .masonry {
+    column-count: 2;
+  }
+}

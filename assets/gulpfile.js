@@ -8,7 +8,7 @@ const cssnano = require('cssnano')({ calc: { precision: 2 },zindex: false });
 const browserSync = require('browser-sync');
 
 gulp.task('sass', () => gulp
-    .src('./src/scss/style.scss')
+    .src('./src/scss/styles.scss')
     .pipe(sass({ outputStyle: 'expanded', errLogToConsole: true }).on('error', sass.logError))
     .pipe(sourcemaps.init())
     .pipe(postcss([autoprefixer, cssnano]))
@@ -32,9 +32,9 @@ gulp.task('serve', () => {
         baseDir: './',
     },
 });
-gulp.watch(['./src/scss/*.scss', './src/scss/partials/*.scss'], ['sass']);
+gulp.watch(['./src/scss/*.scss'], ['sass']);
 gulp.watch('./src/js/main.js', ['babel'])
-gulp.watch('./*.html').on('change', browserSync.reload);
+// gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
