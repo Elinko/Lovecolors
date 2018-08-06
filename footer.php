@@ -66,7 +66,8 @@ a generáciám po nich.</p>
 						<li><a href="<?php echo esc_url(home_url('/')); ?>">úvod</a></li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?>kolekcie">kolekcie</a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">designer</a></li>
-						<li><a href="#">dostupné</a></li>
+
+						<li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-33">

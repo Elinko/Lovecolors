@@ -55,7 +55,7 @@ $web_adresa= get_field('web_adresa');
 						<li><a href="#">úvod</a></li>
 						<li><a href="#">kolekcie</a> </li>
 						<li><a href="#">designer</a></li>
-						<li><a href="#">dostupné</a></li>
+						<li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-33">
