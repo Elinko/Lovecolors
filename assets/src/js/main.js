@@ -170,13 +170,13 @@ $(document).ready(function(){
     $('.tab2 .toscale').height($scalewidth2);
 
 
-      $('.fadeout').hide();
-      $('.forfade a').on('click',function(event){
-        $('.forfade .toscale').removeClass('activatescal');
-
-        event.preventDefault();
-            $(this).find('.toscale').addClass('activatescal');
-      });
+      // $('.fadeout').hide();
+      // $('.forfade a').on('click',function(event){
+      //   $('.forfade .toscale').removeClass('activatescal');
+			//
+      //   event.preventDefault();
+      //       $(this).find('.toscale').addClass('activatescal');
+      // });
 
       var $tmptext='', $sirkakocky='';
       // $('.artdesigner').height(($('.artdesigner').height())+7);
@@ -376,7 +376,7 @@ $(document).ready(function(){
 		// 	$("html, body").animate({ scrollTop: 1050 }, "slow");
 		// }
 
-		
+
 		// $('.kolekciesub .forfade a').on('click', function(event){
 		// 	event.preventDefault();
 		// 	if($(window).width()<768){

@@ -95,8 +95,8 @@ a generáciám po nich.</p>
 
 </footer>
 
-<script src="<?php bloginfo('stylesheet_directory');?>/assets/js/smartphoto.js?v=1"></script>
-<script src="<?php bloginfo('stylesheet_directory');?>/assets/js/main.js"></script>
+<script src="<?php bloginfo('stylesheet_directory');?>/assets/src/js/smartphoto.js?v=1"></script>
+<script src="<?php bloginfo('stylesheet_directory');?>/assets/dist/js/main.js"></script>
 <script type="text/javascript">
 	$('#hpmodal').modal('show');
 

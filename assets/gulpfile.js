@@ -9,6 +9,7 @@ const browserSync = require('browser-sync');
 
 gulp.task('sass', () => gulp
     .src('./src/scss/styles.scss')
+    // .src('./src/scss/index-styles.scss')
     .pipe(sass({ outputStyle: 'expanded', errLogToConsole: true }).on('error', sass.logError))
     .pipe(sourcemaps.init())
     .pipe(postcss([autoprefixer, cssnano]))

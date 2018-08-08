@@ -164,13 +164,13 @@ $(document).ready(function () {
 		var $scalewidth2 = $('.tab2 .toscale').width();
 		$('.tab2 .toscale').height($scalewidth2);
 
-		$('.fadeout').hide();
-		$('.forfade a').on('click', function (event) {
-				$('.forfade .toscale').removeClass('activatescal');
-
-				event.preventDefault();
-				$(this).find('.toscale').addClass('activatescal');
-		});
+		// $('.fadeout').hide();
+		// $('.forfade a').on('click',function(event){
+		//   $('.forfade .toscale').removeClass('activatescal');
+		//
+		//   event.preventDefault();
+		//       $(this).find('.toscale').addClass('activatescal');
+		// });
 
 		var $tmptext = '',
 		    $sirkakocky = '';
