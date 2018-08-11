@@ -122,7 +122,9 @@ header {
         text-decoration: none;
         display: inline-block;
         &:hover {
-          transform: scale(1.2);
+          @media(min-width: 768px){
+            transform: scale(1.2);
+          }
         }
       }
     }
@@ -228,7 +230,10 @@ header {
     }
   }
   a:hover .color {
-    height: 100% !important;
+    @media(min-width: 768px){
+
+      height: 100% !important;
+    }
   }
 }
 
@@ -256,7 +261,10 @@ header {
     }
   }
   a:hover .color {
+    @media(min-width: 768px){
+
     height: 100% !important;
+  }
   }
 }
 
@@ -284,7 +292,10 @@ header {
     }
   }
   a:hover .color {
-    height: 100% !important;
+    @media(min-width: 768px){
+      height: 100% !important;
+
+    }
   }
 }
 
@@ -351,7 +362,10 @@ header {
     .toscale {
       transform: scale(0.7) !important;
       &:hover {
-        transform: scale(0.9) !important;
+        @media(min-width: 768px){
+          transform: scale(0.9) !important;
+
+        }
       }
     }
     .stitok {

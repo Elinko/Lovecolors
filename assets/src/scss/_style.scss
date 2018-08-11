@@ -126,8 +126,11 @@ header {
     border: 1px solid black;
   }
   a:hover {
-    border: 1px solid black;
-    transform: scale(1.2);
+    @media(min-width: 768px){
+      border: 1px solid black;
+      transform: scale(1.2);
+    }
+
   }
 }
 
@@ -147,9 +150,12 @@ header {
       color: #C6C6D1;
       text-decoration: none;
       &:hover {
-        display: inline-block;
-        transform: scale(1.1);
-        color: #000;
+        @media(min-width: 768px){
+          display: inline-block;
+          transform: scale(1.1);
+          color: #000;
+        }
+
       }
     }
     .activ {
@@ -241,8 +247,10 @@ header {
       background: #ffde4aad;
     }
     a:hover .toscale .color {
-      height: 100%;
-      width: 100%;
+      @media(min-width: 768px){
+        height: 100%;
+        width: 100%;
+      }
     }
   }
   .menu-box2 {
@@ -250,8 +258,10 @@ header {
       background: #e6007e66;
     }
     a:hover .toscale .color {
-      height: 100%;
-      width: 100%;
+      @media(min-width: 768px){
+        height: 100%;
+        width: 100%;
+      }
     }
   }
   .menu-box3 {
@@ -259,8 +269,10 @@ header {
       background: #39A99678;
     }
     a:hover .toscale .color {
-      height: 100%;
-      width: 100%;
+      @media(min-width: 768px){
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
@@ -366,7 +378,10 @@ header {
       background: #ffe78278;
     }
     a:hover .shadow1 .color {
-      height: 100%;
+      @media(min-width: 768px){
+        height: 100%;
+
+      }
     }
   }
   .menu-box2 {
@@ -374,7 +389,10 @@ header {
       background: #e6007e17;
     }
     a:hover .shadow1 .color {
-      height: 100%;
+      @media(min-width: 768px){
+        height: 100%;
+
+      }
     }
   }
   .menu-box3 {
@@ -382,7 +400,10 @@ header {
       background: #68e6d163;
     }
     a:hover .shadow1 .color {
-      height: 100%;
+      @media(min-width: 768px){
+        height: 100%;
+
+      }
     }
   }
   .activ {
@@ -643,9 +664,13 @@ header {
     transform: translate(-50%, -50%);
   }
   &:hover .coloring {
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: 100%;
+    @media(min-width: 768px){
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+
+    }
+
   }
 }
 
@@ -754,7 +779,7 @@ header {
     .contentkrasa{
       display: block;
       padding: 20px 10px;
-      margin-left: -50px;
+     margin-left: -80px;
       h2 {
       padding-left: 100px;
         margin: 0;
@@ -1208,9 +1233,12 @@ label {
           color: #a6a2a2;
         }
         &:hover {
-          color: #a6a2a2;
-          transform: scale(1.1);
-          text-decoration: none;
+          @media(min-width: 768px){
+            color: #a6a2a2;
+            transform: scale(1.1);
+            text-decoration: none;
+          }
+
         }
       }
       margin-bottom: 0em;
@@ -1265,6 +1293,7 @@ label {
     }
     .stitok {
       transform: scale(0.7);
+      margin-left: -70px;
     }
   }
   /* .blogArticles .blogArtImg img{

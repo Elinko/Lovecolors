@@ -11,7 +11,10 @@ $ulica= get_field('ulica');
 $mesto= get_field('mesto');
 $email= get_field('email');
 $web_adresa= get_field('web_adresa');
-
+if(get_locale()=='en_GB'){
+ $lang='en';
+ echo get_locale();
+}
 ?>
 
 
@@ -60,11 +63,11 @@ $web_adresa= get_field('web_adresa');
 				</div>
 				<div class="col-sm-33">
 					<div class="foot-adress">
-						<h3 class="speacial-font">ADRESA</h3>
+						<h3 class="speacial-font"><?php if($lang=='en'){echo 'ADDRESS';} else{echo 'ADRESA';}?> </h3>
 						<ul>
 							<li>Love Colors</li>
 							<li>Julianna Renczés Kovács</li>
-							<li class="noborder">prevádzka:</li>
+							<li class="noborder"><?php if($lang=='en'){echo 'traffic';} else{echo 'prevádzka';}?> :</li>
 							<li class="noborder"> </li>
 							<li class="noborder"><?php echo $ulica; ?></li>
 							<li class="noborder"><?php echo $mesto; ?></li>

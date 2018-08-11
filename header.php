@@ -19,12 +19,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/bootstrap-3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/dist/css/styles.css">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/dist/css/styles.css?v1.2">
 	<link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Caveat|Lekton" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="<?php bloginfo('stylesheet_directory');?>/favicon.png"/>
 	<script src="<?php bloginfo('stylesheet_directory');?>/assets/jquery/jquery.min.js"></script>
 	<script src="<?php bloginfo('stylesheet_directory');?>/assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
@@ -100,7 +100,7 @@
 						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'baby-en';} else{echo 'baby';}?>">baby</a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'the-world-of-children';} else{echo 'detsky-svet';}?>"><?php if($lang=='en'){echo "children's world";} else{echo 'detský svet';}?></a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'home-decor-en';} else{echo 'home-decor';}?>">home decor</a> </li>
-						
+
 					</ul>
 				</div>
 

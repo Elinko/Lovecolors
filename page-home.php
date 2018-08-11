@@ -23,9 +23,10 @@ if(get_locale()=='en_GB'){
   <meta name="keywords" content="Love Colors, Farby Lásky, detské izby, dekorácie, doplnky">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/bootstrap-3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/dist/css/index-styles.css">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/dist/css/index-styles.css?v1.2">
   <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Caveat|Lekton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="<?php bloginfo('stylesheet_directory');?>/favicon.png"/>
 	<script src="<?php bloginfo('stylesheet_directory');?>/assets/jquery/jquery.min.js"></script>
   <script src="<?php bloginfo('stylesheet_directory');?>/assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <title>Love Colors - Farby lásky</title>
@@ -152,6 +153,12 @@ if(get_locale()=='en_GB'){
 
 </main>
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#hpmodal').modal('show');
+}); 
+</script>
 <?php
+
 // get_sidebar();
 get_footer();
