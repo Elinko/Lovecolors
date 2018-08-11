@@ -751,16 +751,51 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    .contentkrasa{
+      display: block;
+      padding: 20px 10px;
+      margin-left: -50px;
+      h2 {
+      padding-left: 100px;
+        margin: 0;
+        font-size: 4em;
+        text-transform: uppercase;
+        display: inline-block !important;
+      }
+      .h2block{
+        display: block!important;
+      }
+      .firstp{
+        display: inline-block!important;
+      }
+      p {
+        font-size: 1.8em;
+        margin: 0;
+      }
+      .noinline {
+        display: block;
+        padding-left: 165px;
+        p {
+          margin: 0;
+        }
+      }
+      .nopaddingleft {
+        padding-left: 10px;
+        padding-top: 0px;
+      }
+      .h2padding {
+        padding-left: 100px;
+        padding-top: 0px;
+        display: block!important;
+      }
+      .h2anotherpadding {
+        padding-left: 130px;
+      }
+    }
   }
 }
 
-.krasatext h2 {
-  padding-left: 30%;
-  margin: 0;
-  font-size: 4em;
-  text-transform: uppercase;
-  display: inline-block !important;
-}
+
 
 .omne-krasa {
   display: flex;
@@ -768,34 +803,6 @@ header {
   align-items: baseline;
 }
 
-.krasatext p {
-  font-size: 1.8em;
-  margin: 0;
-}
-
-.noinline {
-  display: block;
-  padding-left: 40.5%;
-  p {
-    margin: 0;
-  }
-}
-
-.krasatext {
-  .h2padding {
-    padding-left: 23%;
-    padding-top: 0px;
-    display: block;
-  }
-  .h2anotherpadding {
-    padding-left: 32%;
-  }
-  .nopaddingleft {
-    padding-left: 10px;
-    padding-top: 0px;
-    padding-bottom: 30px;
-  }
-}
 
 .inline {
   display: inline-block;

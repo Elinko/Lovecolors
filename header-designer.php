@@ -36,8 +36,8 @@
 			</a>
 			<p>by Julianna Rencés Kovács</p>
 			<span class="language">
-				<a href="#" class="activ">SK</a>
-				<a href="#">ENG</a>
+		    <a href="<?php echo get_site_url(); ?>" class="<?php if($lang!='en'){echo 'activ';} ?>">SK</a>
+				<a href="<?php echo get_site_url(); ?>/en" class="<?php if($lang=='en'){echo 'activ';} ?>">ENG</a>
 			</span>
 			<label>
 			<input type='checkbox'>
@@ -50,17 +50,17 @@
 						<a href="#" class="activ">SK</a>
 						<a href="#">ENG</a>
 					</span>
-					<li><a href="<?php echo esc_url(home_url('/')); ?>kolekcie">KOLEKCIE</a></li>
+					<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'collection';} else{echo 'kolekcie';}?>"><?php if($lang=='en'){echo 'collection';} else{echo 'kolekcie';}?> </a> </li>
 						<ol>
-							<li><a href="<?php echo esc_url(home_url('/')); ?>baby">baby</a> </li>
-							<li><a href="<?php echo esc_url(home_url('/')); ?>detsky-svet">DETSKÝ SVET</a> </li>
-							<li><a href="<?php echo esc_url(home_url('/')); ?>home-decor">home decor</a> </li>
+							<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'baby-en';} else{echo 'baby';}?>">baby</a> </li>
+							<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'the-world-of-children';} else{echo 'detsky-svet';}?>"><?php if($lang=='en'){echo "children's world";} else{echo 'detský svet';}?></a> </li>
+							<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'home-decor-en';} else{echo 'home-decor';}?>">home decor</a> </li>
 						</ol>
-					<li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">DESIGNER</a></li>
+					<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'about-me';} else{echo 'o-mne';}?>">designer</a> </li>
 					<ol>
-						<li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">o mne</a> </li>
+						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'about-me';} else{echo 'o-mne';}?>"><?php if($lang=='en'){echo 'about me';} else{echo 'o mne';}?></a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?>blog">blog</a> </li>
-						<li><a href="<?php echo esc_url(home_url('/')); ?>kontakt">kontakt</a> </li>
+						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'contact';} else{echo 'kontakt';}?>"><?php if($lang=='en'){echo 'contact';} else{echo 'kontakt';}?></a> </li>
 					</ol>
 					<li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
 				</ul>
@@ -79,17 +79,18 @@
 
 			<nav class="main-nav">
 				<ul>
-					<li><a href="<?php echo esc_url(home_url('/')); ?>kolekcie">kolekcie</a> </li>
-					<li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">designer</a> </li>
+					<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'collection';} else{echo 'kolekcie';}?>"><?php if($lang=='en'){echo 'collection';} else{echo 'kolekcie';}?> </a> </li>
+					<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'about-me';} else{echo 'o-mne';}?>">designer</a> </li>
 					<li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
 					<?php //if($_SERVER['REQUEST_URI']=="/detsky-svet/") { echo'mam jooo';} ?>
 				</ul>
 
 				<div class="sub-main-nav">
 					<ul>
-						<li><a href="<?php echo esc_url(home_url('/')); ?>o-mne">O mne</a> </li>
-						<li><a href="<?php echo esc_url(home_url('/')); ?>blog">Blog</a> </li>
-						<li><a href="<?php echo esc_url(home_url('/')); ?>kontakt">Kontakt</a> </li>
+						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'baby-en';} else{echo 'baby';}?>">baby</a> </li>
+						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'the-world-of-children';} else{echo 'detsky-svet';}?>"><?php if($lang=='en'){echo "children's world";} else{echo 'detský svet';}?></a> </li>
+						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'home-decor-en';} else{echo 'home-decor';}?>">home decor</a> </li>
+
 					</ul>
 				</div>
 

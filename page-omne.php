@@ -39,14 +39,14 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
  		</div>
  		<div class="col-sm-8">
  			<article class="krasatext">
-        <div style="display:block">
-          <h2 class="super-font">krasa </h2>
-          <p>	sa skrýva</p>
+        <div class="contentkrasa">
+          <h2 class="super-font"><?php if($lang=='en'){echo 'beauty';} else{echo 'krása';}?></h2>
+          <p class="firstp"><?php if($lang=='en'){echo 'is hiding';} else{echo 'sa skrýva';}?>	</p>
            <div class="noinline">
-             <p> rovnako ako</p>
+             <p> <?php if($lang=='en'){echo 'as well';} else{echo 'rovnako ako';}?></p>
           </div>
-          <h2 class="h2padding super-font">V DETAILOCH</h2>
-          <p class="h2anotherpadding inline">tak aj </p> <h2 class="inline nopaddingleft super-font">V CELKU</h2>
+          <h2 class="h2padding h2block super-font"><?php if($lang=='en'){echo 'IN DETAILS';} else{echo 'V DETAILOCH';}?></h2>
+          <p class="h2anotherpadding inline"><?php if($lang=='en'){echo 'as';} else{echo 'tak aj ';}?></p> <h2 class="inline nopaddingleft super-font"><?php if($lang=='en'){echo 'IN WHOLE';} else{echo 'V CELKU';}?></h2>
 
         </div>
 

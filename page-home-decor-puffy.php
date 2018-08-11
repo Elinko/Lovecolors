@@ -1,36 +1,32 @@
 <?php
 /*
-	Template Name: Detský svet Rainboo
+	Template Name: Home decor Puffy
 */
 // Advanced custom fields
 
 get_header();
 
-if($lang=='en'){$page=1015;} else{$page=36;}
+if($lang=='en'){$page=1015;} else{$page=66;}
 
 $popisstranky= get_field('popis_stranky',$page);
 $nadpisstranky= get_field('nadpis_stranky',$page);
 
 $obsah_text3= get_field('color_me_nadpis',$page);
 $nadpis_text3= get_field('color_me_obsah',$page);
-
-// $tematicke = get_field('galeria',928);
-// $doplnky = get_field('galeria',929);
-$colorme = get_field('galeria',930);
+$colorme = get_field('galeria',933);
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
  ?>
  <main>
    <section class="hp first baby group">
-      <div class="padding babysub">
+      <div class="padding">
         <div class="menu-box menu-box1 " style="background:url('<?= the_field('pozadie_baby',5) ?>'); background-size:cover;">
             <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'baby-en';} else{echo 'baby';}?>">
               <div class="">
+
                 <div class="shadow1  ">
-                    <div class="color"></div>
                </div>
                 <div class="toscale  ">
-                  <div class="coloring"></div>
                     <h2>baby</h2>
                     <i class="h2border">______</i>
                     <p><?php if($lang=='en'){echo 'to the bed';} else{echo 'do postielky';}?></p>
@@ -45,10 +41,10 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
         <div class="menu-box menu-box2" style="background:url('<?= the_field('pozadie_detsky_svet',5) ?>'); background-size:cover;">
             <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'the-world-of-children';} else{echo 'detsky-svet';}?>">
               <div class=" ">
-               <div class="shadow1 activ">
+               <div class="shadow1">
                  <div class="color"></div>
                </div>
-                <div class="toscale activatescal">
+                <div class="toscale">
                  <div class="coloring"></div>
                  <h2 style="<?php if($lang=='en'){echo "padding-bottom: 35px;";}?> "><?php if($lang=='en'){echo "children's world";} else{echo 'detský svet';}?></h2>
                   <i class="h2border">______</i>
@@ -63,10 +59,10 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
         <div class="menu-box menu-box3" style="background:url('<?= the_field('pozadie_home_decor',5) ?>'); background-size:cover;">
             <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'home-decor-en';} else{echo 'home-decor';}?>">
               <div class="">
-               <div class="shadow1">
+               <div class="shadow1 activ">
                  <div class="color"></div>
                </div>
-                <div class="toscale">
+                <div class="toscale activatescal">
                  <div class="coloring"></div>
                   <h2>home decor</h2>
                   <i class="h2border">______</i>
@@ -85,43 +81,45 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
       <?php echo $popisstranky; ?>
     </p>
  	</article>
- 	<section class="tab2 kolekciesub detskesub">
+ 	<section class="tab2 kolekciesub homedecorsub">
 
     <div class="hp group smaller">
       <div class="padding">
-        <div class="menu-box forfade menu-box1" style="background:url('<?= the_field('pozadie_sekcie',928) ?>'); background-size:cover;">
-            <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'detske-tematicke-en';} else{echo 'detske-tematicke';}?>/" class="fade2">
+        <div class="menu-box forfade menu-box1"  style="background:url('<?= the_field('pozadie_sekcie',931) ?>'); background-size:cover;">
+            <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'home-decor-quilt-en';} else{echo 'home-decor-quilt';}?>" class="fade2">
               <div class="toscale ">
                 <div class="coloring"></div>
-                  <h2 class="tematicke"><?php if($lang=='en'){echo "Thematic <br> children&nbsp;rooms";} else{echo 'Tematické <br> detské&nbsp;izby';}?></h2>
+                  <h2>QUILT</h2>
                   <i class="h2border">______</i>
-                  <p><?php if($lang=='en'){echo "implementation";} else{echo 'realizácie';}?> </p>
+                  <p><?php if($lang=='en'){echo "Gallery";} else{echo 'Galéria';}?></p>
+
               </div>
             </a>
         </div>
       </div>
 
       <div class="padding">
-        <div class="menu-box forfade menu-box2" style="background:url('<?= the_field('pozadie_sekcie',929) ?>'); background-size:cover;">
-            <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'detske-doplnky-en';} else{echo 'detske-doplnky';}?>/" class="fade3">
+        <div class="menu-box forfade menu-box2"  style="background:url('<?= the_field('pozadie_sekcie',932) ?>'); background-size:cover;">
+            <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'home-decor-doplnky-en';} else{echo 'home-decor-doplnky';}?>" class="fade3">
               <div class="toscale ">
                 <div class="coloring"></div>
-                  <h2 style="margin-top:10px;"><?php if($lang=='en'){echo "accessories";} else{echo 'DOPLNKY';}?></h2>
-                  <i class="h2border">______</i>
-                  <p><?php if($lang=='en'){echo "canopies and&nbsp;buffs";} else{echo 'baldachýny a&nbsp;puffy';}?></p>
+                <h2><?php if($lang=='en'){echo "accessories";} else{echo 'DOPLNKY';}?></h2>
+                <i class="h2border">______</i>
+                <p><?php if($lang=='en'){echo "Gallery";} else{echo 'Galéria';}?></p>
               </div>
             </a>
         </div>
       </div>
 
       <div class="padding">
-        <div class="menu-box forfade menu-box1" style="background:url('<?= the_field('pozadie_sekcie',930) ?>'); background-size:cover;">
-            <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'detske-rainboo-en';} else{echo 'detske-rainboo';}?>/" class="fade1">
+        <div class="menu-box forfade menu-box3"  style="background:url('<?= the_field('pozadie_sekcie',933) ?>'); background-size:cover;">
+            <a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'home-decor-puffy-en';} else{echo 'home-decor-puffy';}?>" class="fade1">
               <div class="toscale activatescal">
                 <div class="coloring"></div>
-                  <h2>Color me</h2>
+                  <h2 ><?php if($lang=='en'){echo "SEATING PUFFS";} else{echo 'SEDACIE PUFFY';}?></h2>
                   <i class="h2border">______</i>
-                  <p><?php if($lang=='en'){echo "original collections";} else{echo 'autorské kolekcie';}?> </p>
+                  <p><?php if($lang=='en'){echo "Gallery";} else{echo 'Galéria';}?></p>
+
               </div>
             </a>
         </div>
@@ -129,18 +127,15 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
     </div>
 
-
-
-
  <!--- zaciatok galerie  -->
 
 
  <div class="fadeout fade1">
      <aside class="social">
        <div class="social-content doplnky">
-         <img src="<?php bloginfo('stylesheet_directory');?>/assets/images/leftheartpink.png" alt="">
-           <h2 class="super-font">Color me</h2>
-         <img src="<?php bloginfo('stylesheet_directory');?>/assets/images/rightheartpink.png" alt="">
+         <img src="<?php bloginfo('stylesheet_directory');?>/assets/images/leftheartblue.png" alt="">
+           <h2 class="super-font"><?php if($lang=='en'){echo "SEATING PUFFS";} else{echo 'SEDACIE PUFFY';}?></h2>
+         <img src="<?php bloginfo('stylesheet_directory');?>/assets/images/rightheartblue.png" alt="">
        </div>
      </aside>
 
@@ -164,26 +159,23 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
 
  </div>
 
-
-
-
-
  	</section>
 
 
 
 
  </main>
- <?php
- get_footer();
 
- ?>
- <script type="text/javascript">
-   $(document).ready(function(){
-     $('.main-nav >ul li:nth-child(1) a').addClass('activ');
-     $('.sub-main-nav ul li:nth-child(2) a').addClass('activ');
-     $('html, body').animate({
-          scrollTop: $(".fadeout").offset().top -30
-      }, 500);
-   });
- </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.main-nav >ul li:nth-child(1) a').addClass('activ');
+    $('.sub-main-nav ul li:nth-child(3) a').addClass('activ');
+    $('html, body').animate({
+         scrollTop: $(".fadeout").offset().top -30
+     }, 500);
+  });
+</script>
+
+ <?php
+
+ get_footer();
