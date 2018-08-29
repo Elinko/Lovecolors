@@ -27,11 +27,7 @@ get_header('designer');
 							<i class="h2border">_________</i>
 							<h2 class="super-font"><?php echo the_field('nadpis_stranky', get_option('page_for_posts')); ?></h2>
 							<?php echo the_field('obsah', get_option('page_for_posts'));?>
-							<!-- <p class="inline">V tejto sekcii nájdete aktuality o našej firme. Radi sa s Vami podelíme o
-		našich inšpiráciách, o nových trendoch v interiérovom dizajne, o tom, čo sa
-		nám páči alebo čo je pre nás dôležité. <br>
-		Ak sa vám páči náš </p><h2 class="inline h222 "> BLOG</h2><p>, sledujte nás a nepremeškáte žiadnu udalosť
-		LoveColors.</p> -->
+
 						</article>
 					</div>
 					<div class="col-sm-4">

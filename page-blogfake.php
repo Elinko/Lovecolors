@@ -8,19 +8,15 @@
 get_header('designer');
 
 ?>
-			<section class="designer blog">  
+			<section class="designer blog">
 				<div class="group">
 					<div class="col-sm-8">
 						<article class="artdesigner">
 							<h1><?php echo get_field('popis_stranky');?></h1>
 							<i class="h2border">_________</i>
 							<h2 class="super-font"><?php echo get_field('nadpis_stranky');?></h2>
-							<?php echo get_field('obsah');?>
-							<!-- <p class="inline">V tejto sekcii nájdete aktuality o našej firme. Radi sa s Vami podelíme o
-		našich inšpiráciách, o nových trendoch v interiérovom dizajne, o tom, čo sa
-		nám páči alebo čo je pre nás dôležité. <br>
-		Ak sa vám páči náš </p><h2 class="inline h222 "> BLOG</h2><p>, sledujte nás a nepremeškáte žiadnu udalosť
-		LoveColors.</p> -->
+							<!-- <?php echo get_field('obsah');?> -->
+
 						</article>
 					</div>
 					<div class="col-sm-4">

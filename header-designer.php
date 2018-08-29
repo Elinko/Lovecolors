@@ -66,6 +66,7 @@
 					<ol>
 						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'about-me';} else{echo 'o-mne';}?>"><?php if($lang=='en'){echo 'about me';} else{echo 'o mne';}?></a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?>blog">blog</a> </li>
+            <li><a href="<?php echo esc_url(home_url('/')); ?>press">press</a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'contact';} else{echo 'kontakt';}?>"><?php if($lang=='en'){echo 'contact';} else{echo 'kontakt';}?></a> </li>
 					</ol>
 					<li><a href="https://eshop.lovecolors.sk/" target="_blank">E-SHOP</a></li>
@@ -94,7 +95,8 @@
 				<div class="sub-main-nav">
 					<ul>
 						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'about-me';} else{echo 'o-mne';}?>"><?php if($lang=='en'){echo 'about me';} else{echo 'o mne';}?></a> </li>
-						<li><a href="<?php echo esc_url(home_url('/')); ?>blog">blog</a> </li>
+            <li><a href="<?php echo esc_url(home_url('/')); ?>blog">blog</a> </li>
+						<li><a href="<?php echo esc_url(home_url('/')); ?>press">press</a> </li>
 						<li><a href="<?php echo esc_url(home_url('/')); ?><?php if($lang=='en'){echo 'contact';} else{echo 'kontakt';}?>"><?php if($lang=='en'){echo 'contact';} else{echo 'kontakt';}?></a> </li>
 
 					</ul>

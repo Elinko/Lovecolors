@@ -111,6 +111,25 @@
     "location": [
         [
             {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-blogfake.php"
+            },
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-press.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-press.php"
+            }
+        ],
+        [
+            {
                 "param": "page",
                 "operator": "==",
                 "value": "117"
@@ -125,5 +144,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1530473584
+    "modified": 1535532313
 }

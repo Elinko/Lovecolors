@@ -34,7 +34,7 @@ if(get_locale()=='en_GB'){
 			<i class="fa fa-envelope-o" aria-hidden="true"></i>
 		</a>
 		<a href="https://eshop.lovecolors.sk/" target="_blank">
-			<i class="fa fa-question" aria-hidden="true"></i>
+			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 		</a>
 		<img src="<?php bloginfo('stylesheet_directory');?>/assets/images/rightheart.png" alt="">
 	</div>

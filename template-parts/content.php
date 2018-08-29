@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php //post_class(); ?> class="post">
 	<div class=" post">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<i class="h2border">_________</i>
@@ -36,10 +36,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
-<!--
-	<footer class="entry-footer">
-		<?php lovecolors_entry_footer(); ?>
-	</footer><!-- .entry-footer --> -->
-</article><!-- #post-<?php the_ID(); ?> -->
+
+</article>

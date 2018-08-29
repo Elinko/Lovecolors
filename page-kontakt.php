@@ -36,7 +36,7 @@ $size = 'full'; // (thumbnail, medium, large, full or custom size)
      // poradie hlavneho menu
      $('.main-nav > ul li:nth-child(2) a').addClass('activ');
      // poradie sub menu
-     $('.sub-main-nav ul li:nth-child(3) a').addClass('activ');
+     $('.sub-main-nav ul li:nth-child(4) a').addClass('activ');
    });
  </script>
 

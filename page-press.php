@@ -6,21 +6,22 @@
  $image2 = get_field('druhy_obrazok');
 
 get_header('designer');
-$galeries = new WP_query(array('post_type' => 'press', 'orderby' => 'post_id', 'order' => 'ASC'));
-// while($galeries->have_posts()){
-//     $galeries->the_post();
-//     echo'<br><br>';
-//     var_dump(get_field('galeria'));
-//     echo'<br><br>';
-//
-// }
+
 ?>
 			<section class="designer blog">
-				<div class="group">
-          <div class="col-sm-8" style="width:100%;margin:15px;">
-            	<article class="artdesigner" style="padding:0; margin:0;">
-                <h2 class="super-font" style="padding: 15px; margin:0;">Press</h2>
+				<div class="group row">
+          <div class="col-sm-8">
+            	<article class="artdesigner">
+                <h1><?php echo get_field('popis_stranky');?></h1>
+                <i class="h2border">_________</i>
+                <h2><?php echo get_field('nadpis_stranky');?></h2>
+                <?php echo get_field('obsah');?>
               </article>
+
+          </div>
+          <div class="col-sm-4">
+            <img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+            <img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
 
           </div>
 
@@ -29,6 +30,8 @@ $galeries = new WP_query(array('post_type' => 'press', 'orderby' => 'post_id', '
 			</section>
 			<section class="blogArticles group">
 				<?php
+
+        $galeries = new WP_query(array('post_type' => 'press', 'orderby' => 'post_id', 'order' => 'ASC'));
         while($galeries->have_posts()){
             $galeries->the_post();
             get_template_part( 'template-parts/content', 'page' );
